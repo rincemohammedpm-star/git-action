@@ -1,0 +1,13 @@
+name: first workflow
+on:
+  push:
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        uses: actions/checkou@v4
+      - name: print working-directory
+        run: pwd
+      - name: echo command
+        run: echo welcome to first workflow
